@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<html>
+<head>
+    <title>Movie Recommender</title>
+</head>
+<body>
+    <form method="POST">
+    <label for="year">Year:</label>
+    <select name="year" id="year">
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+    </select>
+    <label for="genre">Genre:</label>
+    <select name="genre" id="genre">
+        <option value="Action">Action</option>
+        <option value="Drama">Drama</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Horror">Horror</option>
+    </select>
+    <label for="top_n">Top N:</label>
+    <input type="number" name="top_n" id="top_n" min="1">
+    <input type="submit" value="Recommend">
+</form>
+<div id="recommendations">
+    <h2>Movie Recommendations</h2>
+    <ul>
+        {% for recommendation in recommendations %}
+        <li>{{ recommendation }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
