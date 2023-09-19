@@ -1,4 +1,4 @@
-# data-mining-idbm: Movie Recommender Web App
+# data-mining-imdb: Movie Recommender Web App
 # Overview
 This is a web application that helps you discover and get recommendations for top movies based on your preferences. You can filter movies by year and genre and choose how many recommendations you want to see. The app scrapes movie data from IMDb and presents the top-rated movies that match your criteria.
 # Technologies Used
