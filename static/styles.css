@@ -1,61 +1,49 @@
-/* Reset some default browser styles */
-body, h1, h2, p, ul, li, form, select {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-/* Set a background color */
 body {
-    background-color: #f0f0f5; /* Light purple */
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Style the form container */
-.form-container {
-    background-color: #673AB7; /* Purple */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #fce4ec; /* Pastel Pink */
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-/* Style form elements */
+.title {
+    color: #ff69b4; /* Hot Pink */
+}
+
+form {
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: black; 
+    color: #ff69b4; /* Hot Pink */
 }
 
-select, input[type="submit"] {
+select,
+input[type="number"],
+input[type="submit"] {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-/* Style the recommendations section */
-#recommendations {
-    margin-top: 20px;
-    text-align: center;
-    border: 2px solid #000; /* Black border */
     padding: 10px;
-    margin: 50px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: white; 
 }
 
-h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: black; 
+input[type="submit"] {
+    background-color: #ff69b4; /* Hot Pink */
+    color: white;
+    cursor: pointer;
+}
+
+#recommendations {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
 }
 
 ul {
@@ -64,8 +52,9 @@ ul {
 }
 
 li {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #303F9F; /* Dark blue */
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-

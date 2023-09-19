@@ -26,5 +26,6 @@ class TestScraper(unittest.TestCase):
         # Assert that the scraped data is empty for invalid input
         self.assertEqual(len(movie_data), 0)
 
+
 if __name__ == "__main__":
     unittest.main()
